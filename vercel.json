@@ -1,12 +1,12 @@
 {
     "name": "json-server-backend",
     "version": "1.0.0",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "json-server": "^0.17.0"
-    }
+    "builds": [
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "db.json", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/.*", "dest": "/server.js" }
+  ]
   }
   
