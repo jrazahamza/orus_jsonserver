@@ -1,0 +1,10 @@
+{
+    "users": [
+      { "id": 1, "name": "John Doe", "email": "john.doe@example.com" },
+      { "id": 2, "name": "Jane Doe", "email": "jane.doe@example.com" }
+    ],
+    "posts": [
+      { "id": 1, "title": "Hello World", "content": "This is a fake post." },
+      { "id": 2, "title": "React Rocks", "content": "React is awesome!" }
+    ]
+  }
