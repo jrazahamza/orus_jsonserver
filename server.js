@@ -3,11 +3,11 @@ const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
-// const PORT = process.env.PORT || 5000;
-const PORT = process.env.PORT || 3000;
-
 server.use(middlewares);
 server.use(router);
+
+// Ensure the PORT is correctly set for Vercel
+const PORT = process.env.PORT || 3000;
 
 server.listen(PORT, () => {
   console.log(`JSON Server is running on port ${PORT}`);
